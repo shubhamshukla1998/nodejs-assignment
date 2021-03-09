@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container">
+        <h3>Welcome<span id="username"></span></h3>
+        <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="regno">Enter registration number</label>
+              <input type="number" name="regNo" class="form-control" id="regno" aria-describedby="emailHelp" placeholder="registration no." required>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary">
+              </div>
+        </form>
+</div>
+<script>
+
+    // fetch("http://localhost:3000/dashboard")
+    // .then(res => console.log(res))
+    // document.getElementById("username").innerHTML = "hi";
+    // console.log(res);
+
+</script>
+</body>
+</html>
